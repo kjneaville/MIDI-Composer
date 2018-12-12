@@ -1,6 +1,6 @@
 # MIDI Note Composer
 
-Forked from https://github.com/Skuldur/Classical-Piano-Composer
+Forked from: https://github.com/Skuldur/Classical-Piano-Composer
 
 Read about here: https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5
 
