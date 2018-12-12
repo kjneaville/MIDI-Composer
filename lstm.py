@@ -29,7 +29,7 @@ def get_notes():
     """ Get all the notes and chords from the midi files in the ./midi_songs directory """
     notes = []
 
-    for file in glob.glob("midi_songs/*.mid"):
+    for file in glob.glob("edm_midi/1/*.mid"):
         midi = converter.parse(file)
 
         print("Parsing %s" % file)
@@ -116,7 +116,7 @@ def train(model, network_input, network_output):
     )
     callbacks_list = [checkpoint]
 
-    model.fit(network_input, network_output, epochs=200, batch_size=64, callbacks=callbacks_list)
+    model.fit(network_input, network_output, nb_epoch=50, batch_size=64, callbacks=callbacks_list)
 
 if __name__ == '__main__':
     train_network()
